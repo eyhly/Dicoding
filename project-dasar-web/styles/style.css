@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playwrite DE Grund", cursive;
+
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3,
+h5 {
+  color: #f2bed1;
+  padding: 0.3em;
+}
+
+h5:hover {
+  background-color: #fdcedf;
+  color: white;
+  border-radius: 1em; 
+  width: fit-content; 
+}
+
+header.nav-container {
+  width: 100%;
+  margin-inline: auto;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fdcedf;
+  z-index: 9999;
+}
+
+header.nav-container .logo img {
+  width: 110px;
+  padding-left: 2em;
+}
+
+header.nav-container .nav-list ul {
+  padding-left: 1em;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.nav-container .nav-list li {
+  list-style-type: none;
+}
+
+header.nav-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+
+  transition: all 0.2s ease-in-out;
+}
+header.nav-container .nav-list li button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  border: none;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  background-color: #fdcedf;
+  transition: all 0.2s ease-in-out;
+}
+
+header.nav-container .nav-list li:hover a {
+  background-color: #f2bed1;
+  color: white;
+}
+
+header.nav-container .nav-list .dropdown-btn:hover {
+  background-color: #f2bed1;
+  color: white;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+#konten {
+  flex: 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+.ex-pet figure {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ex-pet figure img {
+  width: 8em;
+  filter: blur(0.2em);
+}
+
+.ex-pet figure img:hover {
+  transition: filter 0.5s ease;
+  filter: blur(0);
+}
+
+aside {
+  flex: 1;
+}
+
+aside img {
+  width: 10em;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #f2bed1;
+  text-align: center;
+  font-weight: bold;
+  max-height: 8em;
+}
+
+footer li {
+  display: inline;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding-inline: 0.8em;
+}
+
+footer li a {
+  color: #f9f5f6;
+  font-size: 1.5rem;
+}
+
+footer li a:hover {
+  color: #f8e8ee;
+  font-size: 1.5rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8e8ee;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 1em;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fdcedf;
+  border-radius: 1em;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  #konten,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}

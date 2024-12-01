@@ -1,0 +1,19 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: solid 0.1em;
+    width: 15vw;
+    height: 40vh;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+.content {
+    font-size: 0.8em;
+    margin-top: 1em;
+    line-height: 1.5em;
+}

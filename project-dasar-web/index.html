@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Akhir Dasar Web</title>
+    <link rel="icon" href="./img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="nav-container">
+      <div class="logo">
+        <img src="img/logo.png" alt="petshop logo" />
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li></li>
+          <li><a href="#">Home</a></li>
+          <li>
+            <button class="dropdown-btn" onclick="dropdownFn()">
+              About <i class="fa fa-caret-down"></i>
+            </button>
+          </li>
+          <div class="dropdown-content" id="DropDown">
+            <a href="#service">Service</a>
+            <a href="#testi">Testimoni</a>
+          </div>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="konten">
+        <article id="home" class="card">
+          <h2>Petshop Andalanmu</h2>
+          <p>
+            Petshop menawarkan berbagai solusi untuk anabul anda! <br />
+            Banyak layanan yang kami tawarkan untuk membuat anabul anda menjadi
+            lebih sehat lincah dan bahagia. Dengan biaya terjangkau, anabul anda
+            sudah pasti lebih bahagia jika dirawat di sini! <br />
+            Jangan sampai salah pilih, kemaren ada yang pilih di pet shop
+            sebelah, <strong>uishhhhh mengerikan!</strong> Anabulnya memang
+            sehat, dompet babunya yang sekarat. <br />
+            Pastikan jangan sampai salah pilih pet shop yaaa!
+          </p>
+        </article>
+        <article id="service" class="card">
+          <h2>Our Service</h2>
+          <h5>PET GROOMING SERVICES</h5>
+          <p>
+            Melayani Jasa Grooming Kucing & Anjing – Grooming Panggilan –
+            Memanjakan & Memandikan Peliharaan Kesayangan Kamu – Merawat Kucing
+            & Anjing Kesayangan
+          </p>
+          <h5>PET HOTEL SERVICES</h5>
+          <p>
+            Melayani Jasa Penitipan Kucing Dan Anjing Harian Dengan Pelayanan
+            Terpercaya. Kesehatan, Kenyamanan, Dan Kebahagiaan Anabul Kamu
+            Merupakan Prioritas Kami
+          </p>
+          <h5>PET CLINIC</h5>
+          <p>
+            Merupakan klinik hewan yang didukung oleh Tenaga Medis Profesional
+            (Dokter Hewan Praktisi) dalam mendiagnosa penyakit dan juga memiliki
+            rasa berbelas kasih terhadap hewan kesayangan anda.
+          </p>
+        </article>
+        <article id="testi" class="card ex-pet">
+          <h2>Our Testimoni</h2>
+          <figure>
+            <img src="img/zoroo.jpg" alt="Zoro tapi kucing" />
+            <img src="img/zoroo.jpg" alt="Zoro tapi kucing" />
+            <img src="img/zoroo.jpg" alt="Zoro tapi kucing" />
+          </figure>
+          <h5>Dewi Sari.</h5>
+          <p>
+            "Saya sangat puas dengan produk makanannya. Kucing saya, Zoro, yang
+            biasanya pilih-pilih, langsung suka dengan makanan dari petshop ini.
+            Harga juga terjangkau!"
+          </p>
+          <h5>Rahmat Tahalu</h5>
+          <p>
+            "Saya selalu membawa kelinci saya untuk grooming di sini, dan mereka
+            sangat sabar serta telaten. Kelinci saya selalu pulang dengan bulu
+            yang halus dan wangi. Terima kasih petshop!"
+          </p>
+          <h5>Irfan Hakim</h5>
+          <p>
+            "Pelayanan petshop ini luar biasa! Anjing saya, Bruno, selalu takut
+            ke tempat grooming, tapi di sini dia tampak tenang dan nyaman.
+            Staffnya ramah dan profesional. Pasti akan kembali lagi!"
+          </p>
+        </article>
+      </div>
+      <aside>
+        <article id="detail" class="card">
+          <header>
+            <h2>Detail</h2>
+            <figure>
+              <img src="img/logo.png" alt="Zoro tapi kucing" />
+              <figcaption>Our PetShop</figcaption>
+            </figure>
+          </header>
+          <section>
+            <table>
+              <tr>
+                <th>Layanan</th>
+                <td>Ada, Banyak</td>
+              </tr>
+              <tr>
+                <th>Harga</th>
+                <td>Terjangkau, IDR 50.000 - IDR 200.000</td>
+              </tr>
+              <tr>
+                <th>Kualitas</th>
+                <br />
+                <td>
+                  Beh, jangan ditanya. Menurut studi petshop kami memiliki
+                  rating 4,9/5,0
+                </td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer id="contact">
+      <p>&copy; Made with ❤ by Helya. Thanks to Beyonce</p>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/hyhelyaa/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/helya-salsabilla" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="mailto:helyasabilla@gmail.com?" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/eyhly" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      function dropdownFn() {
+        document.getElementById("DropDown").classList.toggle("show");
+      }
+
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropdown-btn")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var DropDown = document.getElementById("DropDown");
+          if (DropDown.classList.contains("show")) {
+            DropDown.classList.remove("show");
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

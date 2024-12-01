@@ -1,0 +1,40 @@
+.wrapper-card {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.wrapper-arsip {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.archive {
+    margin-top: 1em;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 80vw;
+}
+
+.add-form input {
+    width: 40vw;
+}
+
+.add-form textarea {
+    width: 40vw;
+}
+
+.add-form button {
+    width: 40vw;
+}
